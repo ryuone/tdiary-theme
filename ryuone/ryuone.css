@@ -1,0 +1,353 @@
+@charset "UTF-8";
+body {
+  background-image: url("ryuone.png");
+  background-repeat: repeat-x;
+  background-color: white;
+  color: #333333;
+}
+
+a:link {
+  color: #009999;
+}
+
+a:visited {
+  color: #33cccc;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+ページトップにある操作ボタンの並ぶ行の設定
+*/
+header.adminmenu {
+  text-align: right;
+  font-size: small;
+}
+
+/*
+ページトップにある操作ボタン自体の設定
+*/
+span.adminmenu {
+  padding: 3px;
+}
+span.adminmenu a:link {
+  color: #666;
+}
+span.adminmenu a:visited {
+  color: #666;
+}
+span.adminmenu a:hover {
+  color: red;
+}
+
+/*
+日記タイトルの設定
+*/
+h1 {
+  text-align: left;
+  font-size: 150%;
+  font-style: normal;
+  margin: 2em 0em 3em 1.5em;
+}
+
+/*
+カレンダーの設定
+*/
+div.calendar {
+  text-align: right;
+  font-size: 80%;
+  padding: 2px;
+  margin-bottom: 0.5em;
+}
+
+/*
+ヘッドラインの設定
+*/
+.headline {
+  text-align: right;
+  font-size: 80%;
+  padding: 2px;
+  margin-bottom: 3em;
+}
+
+    /*
+1日の日記全体を囲む枠の設定
+*/
+article.day {
+  margin: 1em;
+  /* タイトル行全体の設定 */
+  /* タイトルを除いた1日の日記本文全体の設定 */
+  /* ツッコミ欄全体の設定 */
+  /* リンク元リスト(短い方)の設定 */
+  /* リンク元リスト(全体一覧)の設定 */
+  /* フォーム全体を囲む枠の設定 */
+}
+article.day h1 {
+  font-size: 120%;
+  font-style: normal;
+  background-color: #e6e6cc;
+  border-width: 1px 3px;
+  border-style: solid double;
+  border-color: #ccc #999;
+  margin: 3px;
+  /* 日付の設定 */
+  /* タイトルの設定 */
+}
+article.day h1 span.date {
+  margin-left: 0.5em;
+}
+article.day div.body {
+  padding: 2px;
+  padding-bottom: 1px;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  /* 項目リストの設定 */
+  /* サブタイトルの設定 */
+  /* 引用の設定 */
+}
+article.day div.body dl {
+  margin-left: 2em;
+}
+article.day div.body dt {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+article.day div.body dd {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+article.day div.body article.section {
+  /* 日記の本文(段落)の設定 */
+}
+article.day div.body article.section h1 {
+  font-size: 100%;
+  margin-top: 1em;
+  font-weight: bold;
+  border-color: #ccc;
+  border-width: 0em 0em 1px 0em;
+  border-style: solid;
+}
+article.day div.body article.section p {
+  margin: 0.5em 0em 0.5em 1em;
+  line-height: 1.3;
+  /* 引用ソースの表示 */
+}
+article.day div.body article.section p .source {
+  margin-top: 0em;
+  margin-right: 1.5em;
+  text-align: right;
+  font-size: 90%;
+}
+article.day div.body blockquote {
+  border-color: #ccc;
+  border-width: 3px;
+  border-style: double;
+  background-color: #f3f3e6;
+  margin-left: 2em;
+  margin-right: 1em;
+  padding: 8px;
+}
+article.day div.comment {
+  font-size: 90%;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 2px 1px 2px;
+  margin: 0.5em 1em 0 2em;
+  /* ツッコミ省略版本文 */
+  /* ツッコミ本体 */
+}
+article.day div.comment article.commentshort {
+  margin-left: 0.5em;
+}
+article.day div.comment article.commentshort p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  line-height: 1.2em;
+}
+article.day div.comment article.commentbody {
+  margin: 0.5em;
+  line-height: 1.2em;
+  /* ツッコミした人の情報 */
+  /* ツッコミ本文 */
+}
+article.day div.comment article.commentbody div.commentator {
+  padding: 3px;
+  color: #cc6600;
+}
+article.day div.comment article.commentbody p {
+  margin: 0.5em;
+}
+article.day div.referer {
+  text-align: right;
+  font-size: 90%;
+  padding: 2px;
+  padding-bottom: 1px;
+  margin-left: 2em;
+  margin-right: 1em;
+}
+article.day div.refererlist {
+  font-size: 90%;
+  padding: 2px;
+  padding-bottom: 1px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  margin-right: 1em;
+  /* リンク元リスト一覧の設定 */
+  /* リンク元リストタイトルの設定 */
+}
+article.day div.refererlist ul {
+  margin-top: 0em;
+}
+article.day div.form {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: 0.5em 1em 0.5em 2em;
+  /* フォームの設定 */
+  /* 更新フォーム */
+  /* 入力フィールドの設定 */
+  /* 複数行入力フィールドの設定 */
+}
+article.day div.form form {
+  margin: 0em;
+}
+article.day div.form form.update {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+article.day div.form form.update input, article.day div.form form.update textarea {
+  background-color: white;
+}
+article.day div.form form.update span.field {
+  display: inline;
+  margin-left: 0em;
+  margin-right: 0.5em;
+}
+article.day div.form form.update div.field.title {
+  display: block;
+  margin-top: 1em;
+}
+article.day div.form form.update div.field.title input {
+  margin-left: 0.5em;
+}
+article.day div.form form.update div.textarea {
+  display: block;
+  margin-top: 1em;
+}
+article.day div.form form.update textarea {
+  display: block;
+  margin-bottom: 1em;
+  width: 35em;
+  height: 15em;
+}
+article.day div.form form.update span.checkbox.hidediary {
+  margin-left: 1em;
+}
+article.day div.form div.caption {
+  margin: 0.5em;
+}
+article.day div.form form.comment input {
+  background-color: white;
+  margin-left: 1em;
+}
+article.day div.form form.comment div.textarea {
+  display: block;
+  vertical-align: top;
+}
+article.day div.form form.comment div.textarea textarea {
+  display: block;
+  background-color: white;
+  width: 30em;
+  height: 5em;
+}
+article.day div.form form.comment div.button {
+  display: block;
+}
+article.day div.form div.field {
+  display: inline;
+  margin-right: 2em;
+}
+article.day div.form input.field {
+  background-color: white;
+}
+article.day div.form textarea {
+  background-color: white;
+  margin-left: 1em;
+  width: 30em;
+}
+
+/* フッタの設定 */
+footer.footer {
+  font-size: small;
+  text-align: right;
+  margin-top: 0px;
+}
+
+/* 罫線の設定 */
+hr {
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: #ddd;
+  /* 日々の日記のセパレータに使われる罫線の設定 */
+}
+hr .sep {
+  display: none;
+}
+
+/* エラーメッセージ表示の設定 */
+p.message {
+  text-align: center;
+  font-size: large;
+  background-color: red;
+  color: white;
+  padding: 8px;
+}
+
+/* 整形済みテキスト(preタグ)の設定 */
+pre {
+  border-color: #333;
+  border-width: 3px;
+  border-style: double;
+  background-color: #f3f3e6;
+  margin-left: 2em;
+  margin-right: 1em;
+  padding: 8px 8px 8px 8px;
+}
+
+/* 強調 */
+em {
+  font-weight: normal;
+  font-style: normal;
+  background-color: #99ff99;
+}
+
+/* より強い強調 */
+strong {
+  color: black;
+  font-style: normal;
+  background-color: #99ff99;
+}
+
+/* 隠し文字 */
+.hide {
+  background-color: #333333;
+}
+
+/* セミフッタの設定 */
+.sfooter {
+  margin-left: 45px;
+}
+
+form.commentstat input {
+  background-color: white;
+}
+
+/* ツッコミ状態変更フォーム */
+div.comment form {
+  margin-top: 0em;
+}
