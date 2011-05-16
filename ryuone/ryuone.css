@@ -81,6 +81,13 @@ div.calendar {
 */
 article.day {
   margin: 1em;
+  background-color: #f8f9f9;
+  border: 1px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
   /* タイトル行全体の設定 */
   /* タイトルを除いた1日の日記本文全体の設定 */
   /* ツッコミ欄全体の設定 */
@@ -142,6 +149,10 @@ article.day div.body article.section p .source {
   margin-top: 0em;
   margin-right: 1.5em;
   text-align: right;
+  font-size: 90%;
+}
+article.day div.body article.section pre b {
+  color: OrangeRed;
   font-size: 90%;
 }
 article.day div.body blockquote {
