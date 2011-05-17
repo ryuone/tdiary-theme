@@ -76,18 +76,23 @@ div.calendar {
   margin-bottom: 3em;
 }
 
-    /*
+/*
 1日の日記全体を囲む枠の設定
 */
 article.day {
   margin: 1em;
   background-color: #f8f9f9;
-  border: 1px solid #333;
+  border: 1px solid #666;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
   /* タイトル行全体の設定 */
   /* タイトルを除いた1日の日記本文全体の設定 */
   /* ツッコミ欄全体の設定 */
@@ -387,17 +392,17 @@ nav.sidebar ul.tagcloud {
   -o-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: 2px 2px 3px black;
-  -webkit-box-shadow: 2px 2px 3px black;
-  -o-box-shadow: 2px 2px 3px black;
-  -ms-box-shadow: 2px 2px 3px black;
-  box-shadow: 2px 2px 3px black;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
   -moz-text-shadow: 1px 1px 1px #000088;
   -webkit-text-shadow: 1px 1px 1px #000088;
   -o-text-shadow: 1px 1px 1px #000088;
   -ms-text-shadow: 1px 1px 1px #000088;
   text-shadow: 1px 1px 1px #000088;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  border: 1px solid #888;
   padding: 5px;
 }
