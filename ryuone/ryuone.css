@@ -155,6 +155,10 @@ article.day div.body article.section pre b {
   color: OrangeRed;
   font-size: 90%;
 }
+article.day div.body article.section div.tags {
+  text-align: right;
+  font-size: 90%;
+}
 article.day div.body blockquote {
   border-color: #ccc;
   border-width: 3px;
