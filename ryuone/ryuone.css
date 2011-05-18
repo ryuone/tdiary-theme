@@ -62,12 +62,12 @@ div.calendar {
 }
 
 /* 日記部分Mainとnavを選択 */
-section.diary {
+div.diary {
   margin: 0 auto;
   max-width: 1024px;
   /* 日記タイトルの設定 */
 }
-section.diary h1.nikkititle {
+div.diary h1.nikkititle {
   background-color: #E6E6CC;
   padding: 10px 0 10px 0;
   margin: 30px 0 5px 0;
@@ -81,18 +81,18 @@ section.diary h1.nikkititle {
   background: -moz-linear-gradient(left top, #eeeeff, #f8f9f9) repeat scroll 0 0 transparent;
   background: -webkit-gradient(linear, left top, left bottom, from(#eeeeff), to(#f8f9f9));
 }
-section.diary div.link {
+div.diary div.link {
   padding-left: 20px;
 }
-section.diary div.main {
+div.diary div.main {
   float: left;
   width: 70%;
 }
-section.diary nav.sidebar {
+div.diary nav.sidebar {
   float: right;
   width: 30%;
 }
-section.diary nav.sidebar ul.tagcloud {
+div.diary nav.sidebar ul.tagcloud {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
@@ -182,12 +182,20 @@ article.day div.body div.lwws {
   margin: 0.4em;
 }
 article.day div.body article.section {
+  padding: 5px;
   margin: 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #fff;
   /* 日記の本文(段落)の設定 */
 }
 article.day div.body article.section h1 {
   font-size: 100%;
-  margin-top: 1em;
+  margin-top: 5px;
   font-weight: bold;
   border-color: #ccc;
   border-width: 0em 0em 1px 0em;
