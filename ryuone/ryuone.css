@@ -4,6 +4,7 @@ body {
   background-repeat: repeat-x;
   background-color: white;
   color: #333333;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a:link {
@@ -93,6 +94,8 @@ article.day {
   -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
   -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
   box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  background: -moz-linear-gradient(center top, #eeeeff, #f8f9f9) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeff), to(#f8f9f9));
   /* タイトル行全体の設定 */
   /* タイトルを除いた1日の日記本文全体の設定 */
   /* ツッコミ欄全体の設定 */
@@ -139,7 +142,13 @@ article.day div.body dd {
   margin-left: 1em;
   margin-bottom: 0.5em;
 }
+article.day div.body div.lwws {
+  text-align: right;
+  font-size: 0.8em;
+  margin: 0.4em;
+}
 article.day div.body article.section {
+  margin: 1px;
   /* 日記の本文(段落)の設定 */
 }
 article.day div.body article.section h1 {
@@ -267,8 +276,9 @@ article.day div.form form.update div.textarea {
 article.day div.form form.update textarea {
   display: block;
   margin-bottom: 1em;
-  width: 35em;
-  height: 15em;
+  width: 70em;
+  font-size: 90%;
+  height: 30em;
 }
 article.day div.form form.update span.checkbox.hidediary {
   margin-left: 1em;
@@ -342,6 +352,8 @@ pre {
   margin-left: 2em;
   margin-right: 1em;
   padding: 8px 8px 8px 8px;
+  font-family: monospace;
+  font-size: 90%;
 }
 
 /* 強調 */
@@ -405,4 +417,42 @@ nav.sidebar ul.tagcloud {
   background-color: #f5f5f5;
   border: 1px solid #888;
   padding: 5px;
+}
+
+div.navimine {
+  background-color: #E6E6CC;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border: 1px double #CCC;
+  font-size: medium;
+}
+
+h1.nikkititle {
+  background-color: #E6E6CC;
+  padding: 3px 10px 3px 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: #f6f6CC;
+  font-size: x-large;
+  color: #009;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+hr.slimhr {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  font-size: 90%;
+}
+
+p, li {
+  font-size: 90%;
 }
