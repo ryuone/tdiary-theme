@@ -13,7 +13,6 @@ body {
 	background-repeat: repeat-x;
 	background-color: white;
 	color: #333333;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a:link{color:#009999;}
@@ -21,33 +20,17 @@ a:visited{color:#33cccc;}
 a:hover{color: red;}
 a { text-decoration:none; }
 
-/*
-ページトップにある操作ボタンの並ぶ行の設定
-*/
+/* ページトップにある操作ボタンの並ぶ行の設定 */
 header.adminmenu {
 	text-align: right;
 	font-size: small;
-}
-
-
-/*
-ページトップにある操作ボタン自体の設定
-*/
-span.adminmenu {
-	padding: 3px;
-    a:link{ color: #666; }
-    a:visited{ color: #666; }
-    a:hover{ color: red; }
-}
-
-/*
-日記タイトルの設定
-*/
-h1 {
-	text-align: left;
-	font-size:150%;
-	font-style:normal;
-	margin: 2em 0em 3em 1.5em;
+    /* ページトップにある操作ボタン自体の設定 */
+    span.adminmenu {
+	    padding: 3px;
+        a:link{ color: #666; }
+        a:visited{ color: #666; }
+        a:hover{ color: red; }
+    }
 }
 
 /*
@@ -70,9 +53,43 @@ div.calendar {
 	margin-bottom: 3em;
 }
 
-/*
-1日の日記全体を囲む枠の設定
-*/
+/* 日記部分Mainとnavを選択 */
+section.diary{
+    margin: 0 auto;
+    max-width: 1024px;
+    /* 日記タイトルの設定 */
+    h1.nikkititle {
+        background-color: #E6E6CC;
+        padding: 10px 0 10px 0;
+        margin: 30px 0 5px 0;
+        border-left: 10px solid #f6f6cc;
+        color: #009;
+        @include vpcss('border-radius', 5px);
+        background: -moz-linear-gradient(left top , #eeeeff, #F8F9F9) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#eeeeff), to(#F8F9F9));
+    }
+    div.link{
+        padding-left: 20px;
+    }
+    div.main{
+        float:left;
+        width: 70%;
+    }
+    nav.sidebar{
+        float:right;
+        width:30%;
+        ul.tagcloud{
+            @include vpcss('border-radius', 10px);
+            @include vpcss('box-shadow', 2px 3px 4px 2px rgba(100,100,200,0.4));
+            @include vpcss('text-shadow', 1px 1px 1px #008);
+            background-color: #f5f5f5;
+            border: 1px solid #888;
+            padding: 5px;
+        }
+    }
+}
+
+/* 1日の日記全体を囲む枠の設定 */
 article.day {
 	margin: 1em;
     background-color: #f8f9f9;
@@ -155,6 +172,10 @@ article.day {
             div.tags{
 	            text-align: right;
                 font-size:90%;
+            }
+            a.flickr{
+                display: block;
+                overflow: auto;
             }
         }
         /* 引用の設定 */
@@ -314,6 +335,7 @@ article.day {
 
 /* フッタの設定 */
 footer.footer {
+    clear: both;
 	font-size: small;
 	text-align: right;
 	margin-top: 0px;
@@ -350,6 +372,7 @@ pre {
 	padding: 8px 8px 8px 8px;
     font-family: monospace;
     font-size: 90%;
+    overflow: auto;
 }
 
 /* 強調 */
@@ -376,8 +399,6 @@ strong{
 	margin-left: 45px;
 }
 
-
-
 form.commentstat input {
     background-color: white;
 }
@@ -385,24 +406,6 @@ form.commentstat input {
 /* ツッコミ状態変更フォーム */
 div.comment form {
     margin-top: 0em;
-}
-
-nav.sidebar{
-    font-size: 90%;
-    color: #000;
-    position: absolute;
-    top: 300px;
-    left: 10px;
-    width: 280px;
-    padding: 2px 0px 0px 0px;
-    ul.tagcloud{
-        @include vpcss('border-radius', 10px);
-        @include vpcss('box-shadow', 2px 3px 4px 2px rgba(100,100,200,0.4));
-        @include vpcss('text-shadow', 1px 1px 1px #008);
-        background-color: #f5f5f5;
-        border: 1px solid #888;
-        padding: 5px;
-    }
 }
 
 div.navimine{
@@ -416,20 +419,6 @@ div.navimine{
     border: 1px double #CCC;
     font-size:medium;
 }
-
-h1.nikkititle {
-    background-color: #E6E6CC;
-    padding: 3px 10px 3px 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-left-width: 10px;
-    border-left-style: solid;
-    border-left-color: #f6f6CC;
-    font-size: x-large;
-    color: #009;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-
 
 hr.slimhr{
     padding: 0;

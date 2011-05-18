@@ -4,7 +4,6 @@ body {
   background-repeat: repeat-x;
   background-color: white;
   color: #333333;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a:link {
@@ -23,38 +22,23 @@ a {
   text-decoration: none;
 }
 
-/*
-ページトップにある操作ボタンの並ぶ行の設定
-*/
+/* ページトップにある操作ボタンの並ぶ行の設定 */
 header.adminmenu {
   text-align: right;
   font-size: small;
+  /* ページトップにある操作ボタン自体の設定 */
 }
-
-/*
-ページトップにある操作ボタン自体の設定
-*/
-span.adminmenu {
+header.adminmenu span.adminmenu {
   padding: 3px;
 }
-span.adminmenu a:link {
+header.adminmenu span.adminmenu a:link {
   color: #666;
 }
-span.adminmenu a:visited {
+header.adminmenu span.adminmenu a:visited {
   color: #666;
 }
-span.adminmenu a:hover {
+header.adminmenu span.adminmenu a:hover {
   color: red;
-}
-
-/*
-日記タイトルの設定
-*/
-h1 {
-  text-align: left;
-  font-size: 150%;
-  font-style: normal;
-  margin: 2em 0em 3em 1.5em;
 }
 
 /*
@@ -77,9 +61,59 @@ div.calendar {
   margin-bottom: 3em;
 }
 
-/*
-1日の日記全体を囲む枠の設定
-*/
+/* 日記部分Mainとnavを選択 */
+section.diary {
+  margin: 0 auto;
+  max-width: 1024px;
+  /* 日記タイトルの設定 */
+}
+section.diary h1.nikkititle {
+  background-color: #E6E6CC;
+  padding: 10px 0 10px 0;
+  margin: 30px 0 5px 0;
+  border-left: 10px solid #f6f6cc;
+  color: #009;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: -moz-linear-gradient(left top, #eeeeff, #f8f9f9) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeff), to(#f8f9f9));
+}
+section.diary div.link {
+  padding-left: 20px;
+}
+section.diary div.main {
+  float: left;
+  width: 70%;
+}
+section.diary nav.sidebar {
+  float: right;
+  width: 30%;
+}
+section.diary nav.sidebar ul.tagcloud {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -moz-text-shadow: 1px 1px 1px #000088;
+  -webkit-text-shadow: 1px 1px 1px #000088;
+  -o-text-shadow: 1px 1px 1px #000088;
+  -ms-text-shadow: 1px 1px 1px #000088;
+  text-shadow: 1px 1px 1px #000088;
+  background-color: #f5f5f5;
+  border: 1px solid #888;
+  padding: 5px;
+}
+
+/* 1日の日記全体を囲む枠の設定 */
 article.day {
   margin: 1em;
   background-color: #f8f9f9;
@@ -177,6 +211,10 @@ article.day div.body article.section pre b {
 article.day div.body article.section div.tags {
   text-align: right;
   font-size: 90%;
+}
+article.day div.body article.section a.flickr {
+  display: block;
+  overflow: auto;
 }
 article.day div.body blockquote {
   border-color: #ccc;
@@ -318,6 +356,7 @@ article.day div.form textarea {
 
 /* フッタの設定 */
 footer.footer {
+  clear: both;
   font-size: small;
   text-align: right;
   margin-top: 0px;
@@ -354,6 +393,7 @@ pre {
   padding: 8px 8px 8px 8px;
   font-family: monospace;
   font-size: 90%;
+  overflow: auto;
 }
 
 /* 強調 */
@@ -389,36 +429,6 @@ div.comment form {
   margin-top: 0em;
 }
 
-nav.sidebar {
-  font-size: 90%;
-  color: #000;
-  position: absolute;
-  top: 300px;
-  left: 10px;
-  width: 280px;
-  padding: 2px 0px 0px 0px;
-}
-nav.sidebar ul.tagcloud {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
-  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
-  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
-  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
-  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
-  -moz-text-shadow: 1px 1px 1px #000088;
-  -webkit-text-shadow: 1px 1px 1px #000088;
-  -o-text-shadow: 1px 1px 1px #000088;
-  -ms-text-shadow: 1px 1px 1px #000088;
-  text-shadow: 1px 1px 1px #000088;
-  background-color: #f5f5f5;
-  border: 1px solid #888;
-  padding: 5px;
-}
-
 div.navimine {
   background-color: #E6E6CC;
   padding-top: 3px;
@@ -429,19 +439,6 @@ div.navimine {
   margin-bottom: 5px;
   border: 1px double #CCC;
   font-size: medium;
-}
-
-h1.nikkititle {
-  background-color: #E6E6CC;
-  padding: 3px 10px 3px 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  border-left-width: 10px;
-  border-left-style: solid;
-  border-left-color: #f6f6CC;
-  font-size: x-large;
-  color: #009;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 hr.slimhr {
