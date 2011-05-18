@@ -31,6 +31,9 @@ header.adminmenu {
         a:visited{ color: #666; }
         a:hover{ color: red; }
     }
+    div, form, select{
+        display:inline;
+    }
 }
 
 /*

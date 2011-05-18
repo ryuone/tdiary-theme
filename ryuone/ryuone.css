@@ -40,6 +40,9 @@ header.adminmenu span.adminmenu a:visited {
 header.adminmenu span.adminmenu a:hover {
   color: red;
 }
+header.adminmenu div, header.adminmenu form, header.adminmenu select {
+  display: inline;
+}
 
 /*
 カレンダーの設定
