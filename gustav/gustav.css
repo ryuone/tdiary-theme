@@ -131,8 +131,15 @@ div.section {
 }
 
 div.section h3 {
+	margin-bottom: 1em;
 	margin-left: 16px;
 	text-indent: -16px;
+}
+
+div.section h3 a,
+div.section h3 a:visited,
+div.section h3 a:hover {
+	text-decoration :none;
 }
 
 .sanchor {
@@ -145,6 +152,8 @@ div.section h3 {
 div.section h4 {
 	margin-top: 2em;
 	margin-left: 10px;
+	margin-bottom: 1em;
+	clear: both;
 }
 
 div.section p {
@@ -249,6 +258,13 @@ div.section div.footnote {
 	margin-left: 20px;
 }
 
+div.section hr {
+	border-style: outset;
+	width: 80%;
+	color: #555;
+	margin: 3em auto 3em 10%;
+}
+
 a.amazon-detail,
 a.amazon-detail:visited,
 a.amazon-detail:hover {
@@ -256,7 +272,8 @@ a.amazon-detail:hover {
 	text-decoration: none;
 }
 
-div.amazon-detail {
+span.amazon-detail {
+	display: block;
 	margin: 1em 10px 1em 30px;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -271,7 +288,8 @@ img.amazon-detail {
 	border: none !important;
 }
 
-div.amazon-detail-desc {
+span.amazon-detail-desc {
+	display: block;
 	overflow: auto;
 }
 
@@ -311,6 +329,12 @@ div.section div.everytrail {
 	text-align: center;
 }
 
+div.section object.youtube {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
 div.section object.ustream {
 	display: block;
 	text-align: center;
@@ -344,6 +368,12 @@ div.day div.form .caption {
 
 div.comment .caption a {
 	font-weight: normal;
+}
+
+div.comment a,
+div.comment a:visited,
+div.comment a:hover {
+	text-decoration :none;
 }
 
 .canchor {
@@ -438,12 +468,19 @@ div.sidebar-item h3 {
 	-webkit-border-top-left-radius: 8px;
 	-webkit-border-top-right-radius: 8px;
 	padding: 10px;
+	padding-bottom: 8px;
 	margin: -10px -10px 10px -10px;
 }
 
 div.sidebar-item ul {
 	list-style-type: none;
 	margin: 0px;
+}
+
+div.sidebar-item a,
+div.sidebar-item a:visited,
+div.sidebar-item a:hover {
+	text-decoration: none;
 }
 
 div.sidebar-item img.amazon {
