@@ -1,4 +1,4 @@
-@charset "euc-jp";
+@charset "utf-8";
 /*
 Title: Gustav
 Revision: $Revision: 1.0 $
@@ -23,6 +23,12 @@ body {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-color: #222;
+}
+
+div.whole-content {
+	text-align: left;
+	margin: 0px auto;
+	max-width: 900px;
 }
 
 div.adminmenu {
@@ -60,15 +66,9 @@ span.adminmenu a:visited {
 	text-decoration: none;
 }
 
-div.content {
-	text-align: left;
-	margin: 0px auto;
-	max-width: 900px;
-}
-
 h1 {
-	height: 90px;
-	padding-top: 200px;
+	padding-top: 188px;
+	padding-bottom: 20px;
 	padding-left: 16px;
 	color: #fff;
 	background-color: transparent;
@@ -92,8 +92,6 @@ div.main {
 div.day {
 	line-height: 150%;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 	color: #000;
 	background-color: #eee;
 	margin-right: 10px;
@@ -106,9 +104,6 @@ div.day h2 {
 	font-size: small;
 	background-color: #aaa;
 	border-radius: 8px 8px 0px 0px;
-	-moz-border-radius: 8px 8px 0px 0px;
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
 	padding: 8px;
 	padding-left: 10px;
 }
@@ -145,8 +140,9 @@ div.section h3 a:hover {
 .sanchor {
 	color: #00e;
 	background-color: #00e;
-	padding: 0.8em 0.2em 0px 0.2em;
-	font-size: 1px;
+	padding-right: 0.5em;
+	height: 1px;
+	width: 1px;
 }
 
 div.section h4 {
@@ -165,8 +161,6 @@ div.section pre {
 	padding: 8px;
 	background-color: #fff;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 }
 
 div.section blockquote {
@@ -174,8 +168,6 @@ div.section blockquote {
 	padding: 2px 10px;
 	background-color: #fff;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 	border-style: solid;
 	border-width: 2px 2px 2px 2px;
 	border-color: #555;
@@ -276,8 +268,6 @@ span.amazon-detail {
 	display: block;
 	margin: 1em 10px 1em 30px;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 	background-color: #fff;
 	padding: 8px;
 }
@@ -379,8 +369,9 @@ div.comment a:hover {
 .canchor {
 	color: #888;
 	background-color: #888;
-	padding: 0.5em 0.2em 0px 0.2em;
-	font-size: 1px;
+	padding-right: 0.5em;
+	height: 1px;
+	width: 1px;
 }
 
 div.commentbody p {
@@ -424,8 +415,6 @@ div.day div.form textarea {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 }
 
 div.day div.form .button input {
@@ -451,8 +440,6 @@ div.sidebar {
 
 div.sidebar-item {
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 	color: #000;
 	background-color: #eee;
 	margin-bottom: 10px;
@@ -464,9 +451,6 @@ div.sidebar-item h3 {
 	font-size: small;
 	background-color: #aaa;
 	border-radius: 8px 8px 0px 0px;
-	-moz-border-radius: 8px 8px 0px 0px;
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
 	padding: 10px;
 	padding-bottom: 8px;
 	margin: -10px -10px 10px -10px;
@@ -492,6 +476,7 @@ div.footer {
 	clear: both;
 	color: #eee;
 	font-size: small;
+	text-align: center;
 }
 div.footer a,
 div.footer a:visited,
@@ -563,8 +548,6 @@ p.message {
 	width: 100%;
 	margin: 0px auto;
 	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
 	font-weight: bold;
 }
 
@@ -611,7 +594,7 @@ div.category ul {
 		height: 50px;
 	}
 
-	div.content {
+	div.whole-content {
 		width: 100%;
 	}
 
