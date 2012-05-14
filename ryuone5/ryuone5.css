@@ -147,7 +147,7 @@ div.whole-content {
     /* リンク元リスト(短い方)の設定 */
     /* リンク元リスト(全体一覧)の設定 */
     /* フォーム全体を囲む枠の設定 */ }
-    div.whole-content article.day h1 {
+    div.whole-content article.day h1, div.whole-content article.day h2, div.whole-content article.day h3 {
       font-size: 100%;
       font-style: normal;
       background-color: #e6e6cc;
@@ -162,7 +162,7 @@ div.whole-content {
       margin: 0px;
       /* 日付の設定 */
       /* タイトルの設定 */ }
-      div.whole-content article.day h1 span.date {
+      div.whole-content article.day h1 span.date, div.whole-content article.day h2 span.date, div.whole-content article.day h3 span.date {
         margin-left: 0.5em; }
     div.whole-content article.day div.body {
       padding: 2px;
@@ -196,7 +196,7 @@ div.whole-content {
         border: 1px solid #333;
         background-color: #fff;
         /* 日記の本文(段落)の設定 */ }
-        div.whole-content article.day div.body article.section h1 {
+        div.whole-content article.day div.body article.section h3 {
           margin-top: 5px;
           margin-bottom: 5px;
           font-weight: bold;

@@ -130,7 +130,7 @@ div.whole-content{
         background: -moz-linear-gradient(center top , #ddddff, #f8f9f9) repeat scroll 0 0 transparent;
         background: -webkit-gradient(linear, left top, left bottom, from(#ddddff), to(#F8F9F9));
         /* タイトル行全体の設定 */
-        h1 {
+        h1,h2,h3 {
             font-size:100%;
             font-style: normal;
             background-color: #e6e6cc;
@@ -179,7 +179,7 @@ div.whole-content{
                 @include vpcss('border-radius', 5px);
                 border: 1px solid #333;
                 background-color: #fff;
-                h1{
+                h3{
                     margin-top: 5px;
                     margin-bottom: 5px;
                     font-weight: bold;
