@@ -1,0 +1,491 @@
+@charset "UTF-8";
+body {
+  background-image: url("ryuone.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #89A;
+  color: #000; }
+
+a:link {
+  color: #0022ff; }
+
+a:visited {
+  color: #0055ff; }
+
+a:hover {
+  color: #ff00ff; }
+
+a {
+  text-decoration: none; }
+
+/* ページトップにある操作ボタンの並ぶ行の設定 */
+div.adminmenu {
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  text-align: right;
+  font-size: small;
+  /* ページトップにある操作ボタン自体の設定 */ }
+  div.adminmenu span.adminmenu {
+    padding: 3px; }
+    div.adminmenu span.adminmenu a:link {
+      color: #666; }
+    div.adminmenu span.adminmenu a:visited {
+      color: #666; }
+    div.adminmenu span.adminmenu a:hover {
+      color: red; }
+  div.adminmenu div, div.adminmenu form, div.adminmenu select {
+    display: inline; }
+
+/* カレンダーの設定 */
+div.calendar {
+  text-align: right;
+  padding: 2px;
+  margin-bottom: 0.5em; }
+
+/* ヘッドラインの設定 */
+.headline {
+  text-align: right;
+  padding: 2px;
+  margin-bottom: 3em; }
+
+div.diary {
+  margin: 0 auto;
+  max-width: 1024px;
+  /* 日記タイトルの設定 */ }
+  div.diary h1.nikkititle {
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    background-color: #E6E6CC;
+    padding: 10px 0 10px 10px;
+    margin: 30px 0 180px 0;
+    border: 1px solid #ccc;
+    color: #009;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(left top, #ccccff, #f8f9f9) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eeeeff), to(#f8f9f9)); }
+    div.diary h1.nikkititle a:link {
+      color: #009; }
+    div.diary h1.nikkititle a:visited {
+      color: #009; }
+    div.diary h1.nikkititle a:hover {
+      color: #009; }
+  div.diary div.main {
+    float: left;
+    width: 79%; }
+  div.diary div.sidebar {
+    float: right;
+    width: 20%;
+    font-size: 90%; }
+    div.diary div.sidebar .contents {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      border: 1px solid #888;
+      padding: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+      -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+      -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+      -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+      box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+      background-color: #f5f5f5; }
+      div.diary div.sidebar .contents dl {
+        margin: 0;
+        padding: 0; }
+      div.diary div.sidebar .contents ul.tagcloud {
+        margin: 0px;
+        padding: 0px;
+        -moz-text-shadow: 1px 1px 1px #000088;
+        -webkit-text-shadow: 1px 1px 1px #000088;
+        -o-text-shadow: 1px 1px 1px #000088;
+        -ms-text-shadow: 1px 1px 1px #000088;
+        text-shadow: 1px 1px 1px #000088; }
+
+/* 1日の日記全体を囲む枠の設定 */
+div.day {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #f8f9f9;
+  border: 1px solid #666;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  background: -moz-linear-gradient(center top, #ddddff, #f8f9f9) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddddff), to(#f8f9f9));
+  /* タイトル行全体の設定 */
+  /* タイトルを除いた1日の日記本文全体の設定 */
+  /* ツッコミ欄全体の設定 */
+  /* リンク元リスト(短い方)の設定 */
+  /* リンク元リスト(全体一覧)の設定 */
+  /* フォーム全体を囲む枠の設定 */ }
+  div.day h2 {
+    font-size: 100%;
+    font-style: normal;
+    background-color: #e6e6cc;
+    border-width: 3px;
+    border-style: solid double;
+    border-color: #ccc #999;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0px;
+    /* 日付の設定 */
+    /* タイトルの設定 */ }
+    div.day h2 span.date {
+      margin-left: 0.5em; }
+    div.day h2 span.title {
+      font-size: medium; }
+    div.day h2 span.nyear {
+      font-size: small; }
+  div.day div.body {
+    background-color: #fff;
+    color: #000;
+    border: #aaf 1px solid;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    /* 項目リストの設定 */
+    /* サブタイトルの設定 */
+    /* 引用の設定 */ }
+    div.day div.body dl {
+      margin-left: 2em; }
+    div.day div.body dt {
+      margin-bottom: 0.2em;
+      font-weight: bold; }
+    div.day div.body dd {
+      margin-left: 1em;
+      margin-bottom: 0.5em; }
+    div.day div.body div.lwws {
+      text-align: right;
+      font-size: 0.8em;
+      margin: 0.4em; }
+    div.day div.body div.section {
+      margin: 1em;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background-color: #fff;
+      /* 日記の本文(段落)の設定 */ }
+      div.day div.body div.section h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        border-color: #ccc;
+        border-width: 0em 0em 1px 0em;
+        border-style: solid; }
+      div.day div.body div.section p {
+        margin-right: 1em;
+        margin-left: 1em;
+        line-height: 1.3;
+        /* 引用ソースの表示 */ }
+        div.day div.body div.section p .source {
+          margin-top: 0em;
+          margin-right: 1.5em;
+          text-align: right; }
+      div.day div.body div.section pre b {
+        color: OrangeRed; }
+      div.day div.body div.section div.tags {
+        text-align: right; }
+      div.day div.body div.section a.flickr {
+        display: block;
+        overflow: auto; }
+    div.day div.body blockquote {
+      border-color: #ccc;
+      border-width: 3px;
+      border-style: double;
+      background-color: #f3f3e6;
+      margin-left: 2em;
+      margin-right: 1em;
+      padding: 8px; }
+      div.day div.body blockquote p {
+        margin: 0.5em 1em 0.5em 1em; }
+  div.day div.comment {
+    font-size: small;
+    background-color: #FFF;
+    color: #000;
+    border: #aaf 1px solid;
+    border-radius: 8px;
+    margin: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    border-radius: 0.5em;
+    /* ツッコミ省略版本文 */
+    /* ツッコミ本体 */ }
+    div.day div.comment div.caption {
+      font-size: 0.9em;
+      border-style: solid;
+      border-color: #aaf;
+      border-width: 0 0 1px;
+      margin: 0.5em; }
+    div.day div.comment div.commentshort {
+      font-size: small;
+      margin-left: 0.5em; }
+      div.day div.comment div.commentshort p {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        line-height: 1.2em; }
+      div.day div.comment div.commentshort span.commentator {
+        font-weight: bold; }
+    div.day div.comment div.commentbody {
+      margin: 0.5em;
+      line-height: 1.2em;
+      /* ツッコミした人の情報 */
+      /* ツッコミ本文 */ }
+      div.day div.comment div.commentbody div.commentator {
+        border-style: solid;
+        border-color: #aaf;
+        border-width: 0 0 1px;
+        line-height: 1.5em;
+        padding: 3px;
+        color: #cc6600; }
+      div.day div.comment div.commentbody p {
+        margin: 0.5em 0.5em 0.5em 2em; }
+  div.day div.referer {
+    text-align: right;
+    padding: 2px;
+    padding-bottom: 1px;
+    margin-left: 2em;
+    margin-right: 1em; }
+  div.day div.refererlist {
+    padding: 2px;
+    padding-bottom: 1px;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-right: 1em;
+    /* リンク元リスト一覧の設定 */
+    /* リンク元リストタイトルの設定 */ }
+    div.day div.refererlist ul {
+      margin-top: 0em; }
+  div.day div.form {
+    background-color: #fff;
+    color: #000;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    border: #aaf 1px solid;
+    margin: 0.5em;
+    /* フォームの設定 */
+    /* 更新フォーム */
+    /* 入力フィールドの設定 */
+    /* 複数行入力フィールドの設定 */ }
+    div.day div.form form {
+      margin: 0.5em 1em 0.5em 2em; }
+    div.day div.form form.update {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; }
+      div.day div.form form.update input, div.day div.form form.update textarea {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        background-color: white; }
+      div.day div.form form.update span.field {
+        display: inline;
+        margin-left: 0em;
+        margin-right: 0.5em; }
+      div.day div.form form.update div.field.title {
+        display: block;
+        margin-top: 1em; }
+      div.day div.form form.update div.field.title input {
+        margin-left: 0.5em; }
+      div.day div.form form.update div.textarea {
+        display: block;
+        margin-top: 1em; }
+        div.day div.form form.update div.textarea textarea {
+          display: block;
+          margin-bottom: 1em;
+          width: 55em;
+          height: 30em; }
+      div.day div.form form.update span.checkbox.hidediary {
+        margin-left: 1em; }
+    div.day div.form div.caption {
+      font-size: 0.9em;
+      border-style: solid;
+      border-color: #aaf;
+      border-width: 0 0 1px;
+      margin: 0.5em; }
+    div.day div.form form.comment {
+      font-size: 0.9em; }
+      div.day div.form form.comment input {
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #eee;
+        margin-left: 1em; }
+      div.day div.form form.comment div.textarea {
+        display: block;
+        vertical-align: top; }
+        div.day div.form form.comment div.textarea textarea {
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -o-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          display: block;
+          background-color: #eee;
+          width: 30em;
+          height: 5em; }
+      div.day div.form form.comment div.button {
+        display: block; }
+    div.day div.form div.field {
+      display: inline;
+      margin-right: 2em; }
+    div.day div.form input.field {
+      background-color: white; }
+    div.day div.form textarea {
+      background-color: white;
+      margin-left: 1em;
+      width: 30em; }
+
+div.category {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #888;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  background-color: #333;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+  background: -moz-linear-gradient(center top, #aaaacc, #f8f9f9) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaacc), to(#f8f9f9)); }
+  div.category h2 {
+    font-size: small;
+    background-color: #89a;
+    margin: 0;
+    padding: 5px;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0; }
+
+/* フッタの設定 */
+div.footer {
+  padding: 5px 10px;
+  margin: 0;
+  clear: both;
+  font-size: small;
+  text-align: right;
+  margin-top: 0px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -webkit-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -o-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  -ms-box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  box-shadow: 2px 3px 4px 2px rgba(100, 100, 200, 0.4);
+  background: -moz-linear-gradient(center top, #aaaa99, #f8f9f9) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaa99), to(#f8f9f9)); }
+
+/* 罫線の設定 */
+hr {
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: #ddd; }
+
+/* 日々の日記のセパレータに使われる罫線の設定 */
+hr.sep {
+  display: none; }
+
+/* エラーメッセージ表示の設定 */
+p.message {
+  text-align: center;
+  font-size: large;
+  background-color: red;
+  color: white;
+  padding: 8px; }
+
+/* 整形済みテキスト(preタグ)の設定 */
+pre {
+  border-color: #333;
+  border-width: 3px;
+  border-style: double;
+  background-color: #f3f3e6;
+  margin-left: 2em;
+  margin-right: 1em;
+  padding: 8px 8px 8px 8px;
+  font-family: monospace;
+  overflow: auto; }
+
+/* 強調 */
+em {
+  font-weight: normal;
+  font-style: normal;
+  background-color: #99ff99; }
+
+/* より強い強調 */
+strong {
+  color: black;
+  font-style: normal;
+  background-color: #99ff99; }
+
+/* 隠し文字 */
+.hide {
+  background-color: #333333; }
+
+/* セミフッタの設定 */
+.sfooter {
+  margin-left: 45px; }
+
+form.commentstat input {
+  background-color: white; }
+
+/* ツッコミ状態変更フォーム */
+div.comment form {
+  margin-top: 0em; }
+
+div.navimine {
+  background-color: #E6E6CC;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border: 1px double #CCC;
+  font-size: medium; }
+
+hr.slimhr {
+  padding: 0;
+  margin: 0; }
