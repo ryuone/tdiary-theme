@@ -79,7 +79,7 @@ div.diary{
     div.sidebar{
         float:right;
         width:20%;
-		font-size:90%;
+        font-size:90%;
         .contents{
             margin-top:0.5em;
             margin-bottom:0.5em;
@@ -136,14 +136,14 @@ div.day {
     }
     /* タイトルを除いた1日の日記本文全体の設定 */
     div.body {
-		background-color: #fff;
-		color: #000;
-		border:#aaf 1px solid;
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+        background-color: #fff;
+        color: #000;
+        border:#aaf 1px solid;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         @include vpcss('border-radius', 8px);
 
-		/* 項目リストの設定 */
+        /* 項目リストの設定 */
         dl {
             margin-left: 2em;
         }
@@ -163,16 +163,16 @@ div.day {
         /* サブタイトルの設定 */
         div.section {
             margin: 1em;
-            @include vpcss('border-radius', 5px);
-            border: 1px solid #333;
             background-color: #fff;
             h3{
+                font-size: 1em;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 font-weight: bold;
-                border-color: #ccc;
-                border-width:  0em 0em 1px 0em;
+                border-color: #333;
+                border-width:  0 2px 1px 0;
                 border-style: solid;
+                @include vpcss('border-radius', 0.0em 0.5em 0.5em 0.0em);
             }
             /* 日記の本文(段落)の設定 */
             p {
@@ -215,20 +215,19 @@ div.day {
     }
     /* ツッコミ欄全体の設定 */
     div.comment {
-	    font-size:small;
-	    background-color:#FFF;
-	    color:#000;
-	    border:#aaf 1px solid;
-	    border-radius: 8px;
-	    margin: 0.5em;
+        font-size:small;
+        background-color:#FFF;
+        color:#000;
+        border:#aaf 1px solid;
+        margin: 0.5em;
         @include vpcss('border-radius', 0.5em);
 
         div.caption {
-	        font-size:0.9em;
-	        border-style:solid;
-	        border-color:#aaf;
-	        border-width:0 0 1px;
-	        margin:0.5em;
+            font-size:0.9em;
+            border-style:solid;
+            border-color:#aaf;
+            border-width:0 0 1px;
+            margin:0.5em;
         }
         /* ツッコミ省略版本文 */
         div.commentshort {
@@ -249,10 +248,10 @@ div.day {
             line-height: 1.2em;
             /* ツッコミした人の情報 */
             div.commentator {
-	            border-style:solid;
-	            border-color:#aaf;
-	            border-width:0 0 1px;
-	            line-height:1.5em;
+                border-style:solid;
+                border-color:#aaf;
+                border-width:0 0 1px;
+                line-height:1.5em;
                 padding: 3px;
                 color: #cc6600;
             }
@@ -263,7 +262,7 @@ div.day {
         }
     }
 
-	/* リンク元リスト(短い方)の設定 */
+    /* リンク元リスト(短い方)の設定 */
     div.referer {
         text-align: right;
         padding: 2px;
@@ -289,22 +288,22 @@ div.day {
 
     /* フォーム全体を囲む枠の設定 */
     div.form {
-		background-color:#fff;
-		color:#000;
-		@include vpcss('border-radius', 4px);
-		border:#aaf 1px solid;
-		margin:0.5em;
+        background-color:#fff;
+        color:#000;
+        @include vpcss('border-radius', 4px);
+        border:#aaf 1px solid;
+        margin:0.5em;
 
-		/* フォームの設定 */
+        /* フォームの設定 */
         form {
-			margin:0.5em 1em 0.5em 2em;
+            margin:0.5em 1em 0.5em 2em;
         }
         /* 更新フォーム */
         form.update {
             padding-top: 0.5em;
             padding-bottom: 0.5em;
             input, textarea{
-				@include vpcss('border-radius', 5px);
+                @include vpcss('border-radius', 5px);
                 background-color: white;
             }
             span.field {
@@ -334,16 +333,16 @@ div.day {
             }
         }
         div.caption {
-			font-size:0.9em;
-			border-style:solid;
-			border-color:#aaf;
-			border-width:0 0 1px;
-			margin:0.5em;
+            font-size:0.9em;
+            border-style:solid;
+            border-color:#aaf;
+            border-width:0 0 1px;
+            margin:0.5em;
         }
         form.comment {
-			font-size: 0.9em;
+            font-size: 0.9em;
             input {
-				@include vpcss('border-radius', 4px);
+                @include vpcss('border-radius', 4px);
                 background-color: #eee;
                 margin-left: 1em;
             }
@@ -351,7 +350,7 @@ div.day {
                 display: block;
                 vertical-align: top;
                 textarea{
-					@include vpcss('border-radius', 4px);
+                    @include vpcss('border-radius', 4px);
                     display: block;
                     background-color: #eee;
                     width: 30em;
