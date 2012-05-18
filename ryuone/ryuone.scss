@@ -361,14 +361,6 @@ div.day {
                 display: block;
             }
         }
-        div.field {
-            display: inline;
-            margin-right: 2em;
-        }
-        /* 入力フィールドの設定 */
-        input.field {
-            background-color: white;
-        }
         /* 複数行入力フィールドの設定 */
         textarea {
             background-color: white;
@@ -376,6 +368,14 @@ div.day {
             width: 30em;
         }
     }
+	div.field {
+		display: inline;
+		margin-right: 2em;
+        /* 入力フィールドの設定 */
+        input.field {
+            background-color: #eee;
+        }
+	}
 }
 div.category{
     margin-top:0.5em;

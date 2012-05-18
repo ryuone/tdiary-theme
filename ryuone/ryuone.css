@@ -292,7 +292,6 @@ div.day {
     margin: 0.5em;
     /* フォームの設定 */
     /* 更新フォーム */
-    /* 入力フィールドの設定 */
     /* 複数行入力フィールドの設定 */ }
     div.day div.form form {
       margin: 0.5em 1em 0.5em 2em; }
@@ -356,15 +355,16 @@ div.day {
           height: 5em; }
       div.day div.form form.comment div.button {
         display: block; }
-    div.day div.form div.field {
-      display: inline;
-      margin-right: 2em; }
-    div.day div.form input.field {
-      background-color: white; }
     div.day div.form textarea {
       background-color: white;
       margin-left: 1em;
       width: 30em; }
+  div.day div.field {
+    display: inline;
+    margin-right: 2em;
+    /* 入力フィールドの設定 */ }
+    div.day div.field input.field {
+      background-color: white; }
 
 div.category {
   margin-top: 0.5em;
