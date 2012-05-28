@@ -465,13 +465,13 @@ pre {
 em {
   font-weight: normal;
   font-style: normal;
-  background-color: #99ff99; }
+  background-color: #ff9999; }
 
 /* より強い強調 */
 strong {
   color: black;
   font-style: normal;
-  background-color: #99ff99; }
+  background-color: #ffffbb; }
 
 /* 隠し文字 */
 .hide {
