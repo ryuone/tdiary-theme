@@ -514,6 +514,9 @@ div.gist_plugin {
     font-weight: bold; }
   .highlight .nb {
     color: #0086b3; }
+  .highlight .c1 {
+    color: #811;
+    font-weight: bold; }
   .highlight .s1 {
     color: #d14; }
   .highlight .s2 {
